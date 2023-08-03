@@ -1,0 +1,29 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_name
+  - current_time
+  - cats_fact
+  - get_restuarants
+
+actions:
+  - action_return_time
+  - action_return_cat_fact
+  - action_return_restuarants
+
+entities:
+  - city
+
+responses:
+  utter_iamabot:
+  - text : "I am AI chatbot mead by Jayesh, you can call me Loosa"
+  utter_greet:
+  - text: "Hey! How can I help you?"
+  utter_goodbye:
+  - text: "Bye, take care"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
